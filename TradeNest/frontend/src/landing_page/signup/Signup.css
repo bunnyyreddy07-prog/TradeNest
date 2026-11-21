@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+.signup-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px;
+
+  background: #fff;
+}
+
+.signup-left {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-left img {
+  width: 90%;
+  max-width: 650px;
+
+  animation: float 4s ease-in-out infinite;
+}
+
+.signup-right {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 470px;
+
+  padding: 45px;
+
+  background: #fff;
+
+  border-radius: 18px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.signup-card h1 {
+  font-size: 42px;
+
+  font-weight: 700;
+
+  color: #222;
+
+  margin-bottom: 10px;
+}
+
+.signup-card p {
+  color: #6c757d;
+
+  margin-bottom: 35px;
+
+  font-size: 18px;
+}
+
+.signup-card form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.signup-card input {
+  height: 58px;
+
+  margin-bottom: 18px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  padding: 0 18px;
+
+  font-size: 17px;
+
+  transition: 0.3s;
+}
+
+.signup-card input:focus {
+  outline: none;
+
+  border-color: #387ed1;
+
+  box-shadow: 0 0 0 3px rgba(56, 126, 209, 0.15);
+}
+
+.signup-card button {
+  height: 58px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #387ed1;
+
+  color: white;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  margin-top: 10px;
+}
+
+.signup-card button:hover {
+  background: #296dc0;
+}
+
+.login-link {
+  text-align: center;
+
+  margin-top: 28px;
+
+  color: #666;
+}
+
+.login-link span {
+  color: #387ed1;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.login-link span:hover {
+  text-decoration: underline;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 992px) {
+  .signup-page {
+    flex-direction: column;
+
+    padding: 30px;
+  }
+
+  .signup-left {
+    margin-bottom: 40px;
+  }
+
+  .signup-left img {
+    width: 80%;
+  }
+
+  .signup-card {
+    max-width: 100%;
+  }
+
+  .signup-card h1 {
+    font-size: 34px;
+  }
+}
